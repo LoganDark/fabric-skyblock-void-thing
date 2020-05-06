@@ -1,20 +1,19 @@
-package net.logandark.boilerplate.config
+package net.logandark.skyblock_void_thing.config
 
 import com.google.gson.JsonElement
 import com.google.gson.JsonPrimitive
-import io.github.prospector.modmenu.api.ConfigScreenFactory
 import io.github.prospector.modmenu.api.ModMenuApi
 import me.shedaniel.clothconfig2.api.ConfigEntryBuilder
-import net.logandark.boilerplate.FabricBoilerplate
 import net.logandark.config.Config
+import net.logandark.skyblock_void_thing.FabricSkyblockVoidThing
 
-object FabricBoilerplateConfig : Config("fabric-boilerplate.json", 1), ModMenuApi {
-	override fun getModId() = FabricBoilerplate.modid
-	override fun getModConfigScreenFactory() = ConfigScreenFactory(::createConfigScreen)
+object FabricSkyblockVoidThingConfig : Config("fabric-skyblock-void-thing.json", 1), ModMenuApi {
+	override fun getModId() = FabricSkyblockVoidThing.modid
+	//override fun getModConfigScreenFactory() = ConfigScreenFactory(::createConfigScreen)
 
 	val example = add(
 		object : ConfigOption<Boolean>(
-			FabricBoilerplate.identifier("example"),
+			FabricSkyblockVoidThing.identifier("example"),
 			"example",
 			false,
 			null

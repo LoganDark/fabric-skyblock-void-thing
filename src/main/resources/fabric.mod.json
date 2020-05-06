@@ -1,15 +1,15 @@
 {
 	"schemaVersion": 1,
-	"id": "fabric-boilerplate",
+	"id": "fabric-skyblock-void-thing",
 	"version": "${version}",
 
-	"name": "Fabric Boilerplate",
-	"description": "Congrats, you made it work!",
+	"name": "Fabric Skyblock Void Thing",
+	"description": "Made for Fransisco TG#8465",
 	"authors": ["LoganDark"],
 	"contact": {
-		"sources": "https://github.com/LoganDark/fabric-boilerplate",
-		"website": "https://github.com/LoganDark/fabric-boilerplate",
-		"issues": "https://github.com/LoganDark/fabric-boilerplate/issues"
+		"sources": "https://github.com/LoganDark/fabric-skyblock-void-thing",
+		"website": "https://github.com/LoganDark/fabric-skyblock-void-thing",
+		"issues": "https://github.com/LoganDark/fabric-skyblock-void-thing/issues"
 	},
 
 	"custom": {
@@ -18,25 +18,25 @@
 	},
 
 	"license": "GPLv3",
-	"icon": "assets/fabric-boilerplate/icon.png",
+	"icon": "assets/fabric-skyblock-void-thing/icon.png",
 
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			{
 				"adapter": "kotlin",
-				"value": "net.logandark.boilerplate.FabricBoilerplate"
+				"value": "net.logandark.skyblock_void_thing.FabricSkyblockVoidThing"
 			}
 		],
 		"modmenu": [
 			{
 				"adapter": "kotlin",
-				"value": "net.logandark.boilerplate.config.FabricBoilerplateConfig"
+				"value": "net.logandark.skyblock_void_thing.config.FabricSkyblockVoidThingConfig"
 			}
 		]
 	},
 
-	"mixins": ["fabric-boilerplate.mixins.json"],
+	"mixins": ["fabric-skyblock-void-thing.mixins.json"],
 
 	"depends": {
 		"fabricloader": ">=0.7.1",

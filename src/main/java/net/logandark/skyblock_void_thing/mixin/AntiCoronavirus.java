@@ -1,4 +1,4 @@
-package net.logandark.boilerplate.mixin;
+package net.logandark.skyblock_void_thing.mixin;
 
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.resource.SplashTextResourceSupplier;

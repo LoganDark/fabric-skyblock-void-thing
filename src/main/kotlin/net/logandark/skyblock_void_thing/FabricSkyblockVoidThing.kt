@@ -1,14 +1,14 @@
-package net.logandark.boilerplate
+package net.logandark.skyblock_void_thing
 
 import net.fabricmc.api.ModInitializer
-import net.logandark.boilerplate.config.FabricBoilerplateConfig
+import net.logandark.skyblock_void_thing.config.FabricSkyblockVoidThingConfig
 import net.minecraft.util.Identifier
 
 // For support join https://discord.gg/v6v4pMv
 
 @Suppress("unused")
-object FabricBoilerplate : ModInitializer {
-	const val modid = "fabric-boilerplate"
+object FabricSkyblockVoidThing : ModInitializer {
+	const val modid = "fabric-skyblock-void-thing"
 
 	override fun onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
@@ -19,8 +19,8 @@ object FabricBoilerplate : ModInitializer {
 
 		// Cycle config to ensure the latest values are read & any errors are
 		// fixed and written to file.
-		FabricBoilerplateConfig.load()
-		FabricBoilerplateConfig.save()
+		FabricSkyblockVoidThingConfig.load()
+		FabricSkyblockVoidThingConfig.save()
 	}
 
 	/**
